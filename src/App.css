@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+*, *::before, *::after{
+
+    box-sizing: border-box;
+}
+
+.custom-container {
+    max-width: 67rem;
+    margin: 0 auto;
+}
