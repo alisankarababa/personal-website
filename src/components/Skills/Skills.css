@@ -1,0 +1,21 @@
+.sec-skills {
+    padding-top: 5em;
+    padding-bottom: 8.12em;
+}
+
+.sec-skills__header {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.skills {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+}
+
+.skill__logo {
+    margin-bottom: 0.6rem;
+}
