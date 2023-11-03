@@ -19,3 +19,10 @@
 .skill__logo {
     margin-bottom: 0.6rem;
 }
+
+.skill__name {
+    color: var(--clr-gray777);
+    font-size: 1.5rem;
+    font-family: var(--fnt-inter);
+    font-weight: 500;
+}
