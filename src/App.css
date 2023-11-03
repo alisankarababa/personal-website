@@ -42,6 +42,12 @@
     box-sizing: border-box;
 }
 
+* {
+    --clr-gray777: #777777;
+    --fnt-inter: 'Inter', sans-serif;
+    --fnt-playfair: 'Playfair Display', serif;
+}
+
 .custom-container {
     max-width: 67rem;
     margin: 0 auto;
