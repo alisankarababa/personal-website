@@ -22,11 +22,30 @@ export const heroSection = {
 	},
 };
 
-export const skills = [
-	{ name: {tr: "JAVASCRIPT", en: "JAVASCRIPT", style: {"font-family": "'Inter', sans-serif", }}, logo: logoJs },
-	{ name: {tr: "REACT", en: "REACT", style: {"font-family": "'Inter', sans-serif", }}, logo: logoReact },
-    { name: {tr: "FIGMA", en: "FIGMA", style: {"font-family": "'Inter', sans-serif", }}, logo: logoFigma},
-    { name: {tr: "NODE", en: "NODE", style: {"font-family": "'Inter', sans-serif", }}, logo: logoNode},
-    { name: {tr: "REDUX", en: "REDUX", style: {"font-family": "'Inter', sans-serif", }}, logo: logoRedux},
-    { name: {tr: "VS CODE", en: "VS CODE", style: {"font-family": "'Inter', sans-serif", }}, logo: logoVsCode}
-];
+export const page_tr = {
+	skillsData: {
+		list: [
+			{ name: "JAVASCRIPT", logo: logoJs },
+			{ name: "REACT", logo: logoReact },
+			{ name: "FIGMA", logo: logoFigma },
+			{ name: "NODE", logo: logoNode },
+			{ name: "REDUX", logo: logoRedux },
+			{ name: "VS CODE", logo: logoVsCode },
+		],
+
+	},
+};
+
+export const page_en = {
+	skillsData: {
+		list: [
+			{ name: "JAVASCRIPT", logo: logoJs },
+			{ name: "REACT", logo: logoReact },
+			{ name: "REDUX", logo: logoRedux },
+			{ name: "NODE", logo: logoNode },
+			{ name: "VS CODE", logo: logoVsCode },
+			{ name: "FIGMA", logo: logoFigma },
+		],
+
+	},
+};

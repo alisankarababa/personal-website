@@ -1,14 +1,11 @@
 import React from "react";
-import { skills } from "../../data/data"
+import { page_en } from "../../data/data";
 import "./Skills.css"
 
 
-const languages = {
-	tr: "tr",
-	en: "en",
-};
+const {skillsData} = page_en;
 
-const lang = languages.en;
+
 
 export function SkillLogo({ src, alt, ...rest }) {
 	return <img src={src} alt={alt} {...rest} />;
@@ -35,15 +32,15 @@ export default function Skills({ className, ...rest }) {
 		<section className={classes}>
 			<h2 className="sec-skills__header">Skills</h2>
 			<div className="skills">
-				{skills.map((skill) => (
-					<Skill className="skill" key={skill.name[lang]}>
+				{skillsData.list.map((skill) => (
+					<Skill className="skill" key={skill.name}>
 						<SkillLogo
 							className="skill__logo"
 							src={skill.logo}
 							alt="skill-logo"
 						/>
-						<SkillName className="skill__name" style={skill.name.style}>
-							{skill.name[lang]}
+						<SkillName className="skill__name" style={skillsData.styleSkillName}>
+							{skill.name}
 						</SkillName>
 					</Skill>
 				))}
