@@ -5,6 +5,7 @@
 }
 
 .sec-skills__header {
+    text-align: center;
     font-size: 3rem;
     margin-bottom: 3.5rem;
     color: var(--clr-black);
