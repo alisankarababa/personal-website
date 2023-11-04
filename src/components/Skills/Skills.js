@@ -30,20 +30,25 @@ export default function Skills({ className, ...rest }) {
 
 	return (
 		<section className={classes}>
-			<h2 className="sec-skills__header">Skills</h2>
-			<div className="skills">
-				{skillsData.list.map((skill) => (
-					<Skill className="skill" key={skill.name}>
-						<SkillLogo
-							className="skill__logo"
-							src={skill.logo}
-							alt="skill-logo"
-						/>
-						<SkillName className="skill__name" style={skillsData.styleSkillName}>
-							{skill.name}
-						</SkillName>
-					</Skill>
-				))}
+			<div className="custom-container">
+				<h2 className="sec-skills__header">Skills</h2>
+				<div className="skills">
+					{skillsData.list.map((skill) => (
+						<Skill className="skill" key={skill.name}>
+							<SkillLogo
+								className="skill__logo"
+								src={skill.logo}
+								alt="skill-logo"
+							/>
+							<SkillName
+								className="skill__name"
+								style={skillsData.styleSkillName}
+							>
+								{skill.name}
+							</SkillName>
+						</Skill>
+					))}
+				</div>
 			</div>
 		</section>
 	);
