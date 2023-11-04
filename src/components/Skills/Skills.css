@@ -1,11 +1,13 @@
 .sec-skills {
     padding-top: 5em;
     padding-bottom: 8.12em;
+    font-family: var(--fnt-inter);
 }
 
 .sec-skills__header {
     font-size: 3rem;
     margin-bottom: 3.5rem;
+    color: var(--clr-black);
 }
 
 .skills {
@@ -29,7 +31,18 @@
 .skill__name {
     color: var(--clr-gray777);
     font-size: 1.5rem;
-    font-family: var(--fnt-inter);
     font-weight: 500;
     word-break: break-all;
+}
+
+.dark .sec-skills {
+    background-color: var(--clr-grayMid);
+}
+
+.dark .skill__name {
+    color: var(--clr-grayD9);
+}
+
+.dark .sec-skills__header {
+    color: var(--clr-F4);
 }
