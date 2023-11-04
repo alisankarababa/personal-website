@@ -22,6 +22,15 @@ export const heroSection = {
 	},
 };
 
+
+const clrBlue1769FF = "#1769FF";
+const clrBlack0A0A14 = "#0A0A14";
+const clrBlue0077B5 = "#0077B5";
+const clrPinkAF0C48 = "#AF0C48";
+
+
+const linkGithub = "https://github.com/alisankarababa";
+
 export const page_tr = {
 	skillsData: {
 		list: [
@@ -34,6 +43,16 @@ export const page_tr = {
 		],
 
 	},
+
+    footerData: {
+        msg: "Let's work togetger on your next product.",
+        links : [
+            {name: "Github", to: linkGithub, style: {color: clrBlue1769FF}},
+            {name: "Personal Blog", to: "#", style: {color: clrBlack0A0A14}, styleDark: {color: "white"}},
+            {name: "Linkedin", to: "#", style: { color: clrBlue0077B5}},
+            {name: "Email", to: "#", style: {color: clrPinkAF0C48}},
+        ]
+    }
 };
 
 export const page_en = {
@@ -46,6 +65,15 @@ export const page_en = {
 			{ name: "VS CODE", logo: logoVsCode },
 			{ name: "FIGMA", logo: logoFigma },
 		],
-
 	},
+
+    footerData: {
+        msg: "Let's work togetger on your next product.",
+        links : [
+            {name: "Github", to: linkGithub, style: {color: clrBlue1769FF}},
+            {name: "Personal Blog", to: "#", style: {color: clrBlack0A0A14}, styleDark: {color: "white"}},
+            {name: "Linkedin", to: "#", style: { color: clrBlue0077B5}},
+            {name: "Email", to: "#", style: {color: clrPinkAF0C48}},
+        ]
+    }
 };
