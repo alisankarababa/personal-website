@@ -6,7 +6,7 @@ function App() {
 	return (
 		<div className="App">
 
-            <Skills className="custom-container"/>
+            <Skills />
 
 		</div>
 	);
