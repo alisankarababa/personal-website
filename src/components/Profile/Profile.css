@@ -1,0 +1,12 @@
+.profile-wrapper {
+    background-color: var(--clr-F4);
+    padding: 4.5em 0;
+}
+
+.dark .profile-wrapper {
+    background-color: var(--clr-grayDark);
+}
+
+.dark .sec-profile {
+    color: white;
+}
