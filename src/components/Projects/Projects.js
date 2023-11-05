@@ -44,7 +44,7 @@ export default function Projects() {
 	return (
 		<div className="projects-wrapper">
 			<section className="sec-projects custom-container">
-                <h2 className="sec-projects__title">{projectsData.title}</h2>
+                <h2 className="sec--title">{projectsData.title}</h2>
 				<div className="sec-projects__projects">
                     {projectsData.list.map((project) => (
                         <div

@@ -9,13 +9,6 @@
     grid-gap: 4rem;
 }
 
-.sec-projects__title {
-    font-size: 2.2rem;
-    font-weight: 500;
-    margin-bottom: 2.25rem;
-    text-align: center;
-}
-
 .project {
     container-type: inline-size;
     container-name: project--container;
