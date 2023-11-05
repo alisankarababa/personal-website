@@ -28,7 +28,6 @@ export default function Projects() {
 		if (isDarkTheme && project.styleDark) style = project.styleDark;
 		else style = project.style;
 
-		console.log(style);
 		return style;
 	}
 
@@ -37,7 +36,6 @@ export default function Projects() {
 		if (isDarkTheme && tech.styleDark) style = tech.styleDark;
 		else style = tech.style;
 
-		console.log(style);
 		return style;
 	}
 
