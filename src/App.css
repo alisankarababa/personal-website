@@ -56,3 +56,10 @@
 .pill {
     border-radius: 100rem;
 }
+
+.sec--title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 2.25rem;
+    text-align: center;
+}
