@@ -122,6 +122,29 @@ export const page_tr = {
         linkLogoDark: logoArrowRightWhite,
     },
 
+    profileData: {
+
+        title: "Profil",
+        basicInfo: {
+            title: {text: "Temel Bilgiler", style: { color: clrBlueDDEEFE } },
+            info: [
+                {label: "Doğum Tarihi",  text: "21-02-1994"},
+                {label: "İkamet Şehri", text: "İstanbul"},
+                {label: "Eğitim Durumu", text: "Boğaziçi Üniversitesi, Fizik Lisans, 2020" },
+                {label: "Tercih Ettiği Rol", text: "Full Stack Developer"},
+            ]
+        },
+
+        aboutMe: {
+            title: "Hakkımda",
+            paragraphs: [
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+                "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+            ]
+        }
+
+    },
+
     footerData: {
         msg: "Let's work togetger on your next product.",
         links : [
@@ -146,6 +169,29 @@ export const page_en = {
         logoTop : logoRing,
         logoLeft: logoPill,
 	},
+
+    profileData: {
+
+        title: "Profile",
+        basicInfo: {
+            title: {text: "Basic Information", style: { color: clrBlueDDEEFE } },
+            info: [
+                {label: "Date of Birth",  text: "21-02-1994"},
+                {label: "Current City", text: "İstanbul"},
+                {label: "Education", text: "Bogazici University, BS Physics, 2020" },
+                {label: "The Preferred Role", text: "Full Stack Developer"},
+            ]
+        },
+
+        aboutMe: {
+            title: "About Me",
+            paragraphs: [
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+                "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+            ]
+        }
+
+    },
 
     projectsData: {
         title: "Projects",
