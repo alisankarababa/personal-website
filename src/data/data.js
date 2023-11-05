@@ -85,8 +85,8 @@ export const page_tr = {
                 summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
                 technologies: {
                     list: ["redux", "vercel", "axios", "router"],
-                    style: { "background-color": "white" },
-                    styleDark: { "background-color": clr525252 },
+                    style: { backgroundColor: "white" },
+                    styleDark: { backgroundColor: clr525252 },
 
                 },
                 links: [
@@ -95,16 +95,16 @@ export const page_tr = {
                 ],
                 image: images.projects.picRandomJokes,
 
-                style: {"background-color": clrBlueDDEEFE},
-                styleDark : {"background-color": clr2D3235},
+                style: {backgroundColor: clrBlueDDEEFE},
+                styleDark : {backgroundColor: clr2D3235},
             },
             {
                 title: "Are you bored?", 
                 summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
                 technologies: {
                     list: ["react", "redux", "vercel", "axios", "router"],
-                    style: { "background-color": "white" },
-                    styleDark: { "background-color": clr525252 },
+                    style: { backgroundColor: "white" },
+                    styleDark: { backgroundColor: clr525252 },
                 },
                 links: [
                     {text: "View on Github", to: linkGithub},
@@ -112,8 +112,8 @@ export const page_tr = {
                 ],
                 image: images.projects.picAreYouBored,
 
-                style: {"background-color": clrD9F6F1},
-                styleDark: {"background-color": clr495351}
+                style: {backgroundColor: clrD9F6F1},
+                styleDark: {backgroundColor: clr495351}
             },
             
         ],
@@ -126,7 +126,7 @@ export const page_tr = {
 
         title: "Profil",
         basicInfo: {
-            title: {text: "Temel Bilgiler", style: { color: clrBlueDDEEFE } },
+            title: {text: "Temel Bilgiler", style: { color: clrBlue1769FF } },
             info: [
                 {label: "Doğum Tarihi",  text: "21-02-1994"},
                 {label: "İkamet Şehri", text: "İstanbul"},
@@ -174,7 +174,7 @@ export const page_en = {
 
         title: "Profile",
         basicInfo: {
-            title: {text: "Basic Information", style: { color: clrBlueDDEEFE } },
+            title: {text: "Basic Information", style: { color: clrBlue1769FF } },
             info: [
                 {label: "Date of Birth",  text: "21-02-1994"},
                 {label: "Current City", text: "İstanbul"},
@@ -201,15 +201,15 @@ export const page_en = {
                 summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
                 technologies: {
                     list: ["redux", "vercel", "axios", "router"],
-                    style: { "background-color": "white" },
-                    styleDark: { "background-color": clr525252 },
+                    style: { backgroundColor: "white" },
+                    styleDark: { backgroundColor: clr525252 },
                 },
                 links: [
                     {text: "View on Github", to: linkGithub},
                     {text: "Go to app", to: linkGithub, hasLogo: true},
                 ],
-                style: {"background-color": clrBlueDDEEFE},
-                styleDark : {"background-color": clr2D3235},
+                style: {backgroundColor: clrBlueDDEEFE},
+                styleDark : {backgroundColor: clr2D3235},
                 image: images.projects.picRandomJokes,
 
             },
@@ -218,8 +218,8 @@ export const page_en = {
                 summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
                 technologies: {
                     list: ["react", "redux", "vercel", "axios", "router"],
-                    style: { "background-color": "white" },
-                    styleDark: { "background-color": clr525252 },
+                    style: { backgroundColor: "white" },
+                    styleDark: { backgroundColor: clr525252 },
                 },
                 links: [
                     {text: "View on Github", to: linkGithub},
@@ -227,8 +227,8 @@ export const page_en = {
                 ],
                 image: images.projects.picAreYouBored,
 
-                style: {"background-color": clrD9F6F1},
-                styleDark: {"background-color": clr495351}
+                style: {backgroundColor: clrD9F6F1},
+                styleDark: {backgroundColor: clr495351}
             },
             
         ],
