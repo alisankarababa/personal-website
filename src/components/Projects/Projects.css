@@ -13,7 +13,7 @@
     container-name: project--container;
 
     border-radius: 0.75rem;
-    padding: 1em;
+    padding: 2.5em 2.5em 0 2.5em;
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
