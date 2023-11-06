@@ -42,24 +42,6 @@ const images = Object.freeze({
 
 });
 
-export const heroSection = {
-	greeting: {
-		tr: "Merhaba👋",
-		en: "Hi👋",
-	},
-
-	intoductoryText: {
-		tr: "Ben Alişan. Full-stack yazılımcıyım. Sağlam ve ölçeklenebilir frontend projeleri geliştirebiliyorum. Görüşelim!",
-		en: "I’m Alişan. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",
-	},
-
-	currentOccupation: {
-		tr: "sfsdfsdafsdf",
-		en: "Currently Freelancing for UX, UI, & Web Design Project. Invite me to join your team -> pratamaiosi@gmail.com",
-	},
-};
-
-
 const clrBlue1769FF = "#1769FF";
 const clrBlack0A0A14 = "#0A0A14";
 const clrBlue0077B5 = "#0077B5";
@@ -74,8 +56,21 @@ const clr525252 = "#525252";
 
 const linkGithub = "https://github.com/alisankarababa";
 
+
+//TODO add hero section to tr page too
 export const page_tr = {
-	skillsData: {
+	heroData: {
+        greeting: "Merhaba👋",
+		intoductoryText: "Ben Alişan. Full-stack yazılımcıyım. Sağlam ve ölçeklenebilir frontend projeleri geliştiriyorum. Görüşelim!",
+        occupation: "Şu an UX, UI, & Web Tasarımı projeleri yapıyorum. -> Beni takımınızda görmek için -> alisankarababa@gmail.com",
+        img: images.hero.imgHero,
+        links: [
+            { to: linkGithub, logo: images.hero.logoLinkedIn, logoDark: images.hero.logoLinkedInDarkTheme }, //TODO fix link to property
+            { to: linkGithub, logo: images.hero.logoGithub, logoDark: images.hero.logoGithubDarkTheme }
+        ]
+    },
+    
+    skillsData: {
 		list: [
 			{ name: "JAVASCRIPT", logo: images.skills.logoJs },
 			{ name: "REACT", logo: images.skills.logoReact },
@@ -169,6 +164,18 @@ export const page_tr = {
 };
 
 export const page_en = {
+    
+    heroData: {
+        greeting: "Hello👋",
+        intoductoryText: "I’m Alişan. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",
+        occupation: "Currently Freelancing for UX, UI, & Web Design Project. Invite me to join your team -> alisankarababa@gmail.com",
+        img: images.hero.imgHero,
+        links: [
+            { to: linkGithub, logo: images.hero.logoLinkedIn, logoDark: images.hero.logoLinkedInDarkTheme }, //TODO fix link to property
+            { to: linkGithub, logo: images.hero.logoGithub, logoDark: images.hero.logoGithubDarkTheme }
+        ]
+    },
+
 	skillsData: {
 		list: [
 			{ name: "JAVASCRIPT", logo: images.skills.logoJs },
