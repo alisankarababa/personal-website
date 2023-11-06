@@ -179,7 +179,7 @@ export const page_en = {
                 {label: "Date of Birth",  text: "21-02-1994"},
                 {label: "Current City", text: "İstanbul"},
                 {label: "Education", text: "Bogazici University, BS Physics, 2020" },
-                {label: "The Preferred Role", text: "Full Stack Developer"},
+                {label: "Preferred Role", text: "Full Stack Developer"},
             ]
         },
 
