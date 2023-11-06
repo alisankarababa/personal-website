@@ -2,11 +2,6 @@
     padding: 5em 0;
 }
 
-.sec-projects {
-
-    padding: 1em;
-}
-
 .sec-projects__projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
