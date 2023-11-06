@@ -68,25 +68,26 @@ export default function Projects() {
                                         </ProjectTechnology>
                                     ))}
                                 </div>
-                                <div className="project__links">
-                                    {project.links.map((link) => (
-                                        <div key={link.text}>
-                                            <a className="link" href={link.to}>
-                                                {link.text}
-                                            </a>
-                                            {link.hasLogo && (
-                                                <img
-                                                    src={
-                                                        isDarkTheme
-                                                            ? projectsData.linkLogoDark
-                                                            : projectsData.linkLogo
-                                                    }
-                                                    alt="img-link"
-                                                />
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
+                                
+                            </div>
+                            <div className="project__links">
+                                {project.links.map((link) => (
+                                    <div key={link.text}>
+                                        <a className="link" href={link.to}>
+                                            {link.text}
+                                        </a>
+                                        {link.hasLogo && (
+                                            <img
+                                                src={
+                                                    isDarkTheme
+                                                        ? projectsData.linkLogoDark
+                                                        : projectsData.linkLogo
+                                                }
+                                                alt="img-link"
+                                            />
+                                        )}
+                                    </div>
+                                ))}
                             </div>
                             <img
                                 className="project__image"
