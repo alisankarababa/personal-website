@@ -10,3 +10,57 @@
 .dark .sec-profile {
     color: white;
 }
+
+.dark .basic-info {
+    background-color: var(--clr-gray52);
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    grid-gap: 4rem;
+}
+
+.profile__item {
+    flex-grow: 1;
+    flex-basis: 45%;
+}
+
+.basic-info {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 8px 8px 3px 0px rgba(82,82,82,0.5); /* TODO rewrite this using --clr-gray52  */
+}
+
+.profile__item {
+    padding: 2.25em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.basic-info__title {
+    font-size: 1.5rem;
+    font-family: var(--fnt-playfair);
+}
+
+.basic-info__option {
+    font-size: 1.125rem;
+    display: grid;
+    grid-template-columns: minmax(50px, 2fr) minmax(100px, 3fr);
+    grid-gap: 1.2rem;
+}
+
+.basic-info__label {
+    font-weight: 600;
+}
+
+.about-me__title {
+    font-size: 1.5rem;
+    font-family: var(--fnt-playfair);
+}
+
+.about-me__paragraphs {
+    font-size: 1.125rem;
+    font-family: var(--fnt-inter);
+}
