@@ -5,14 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { ContextThemeProvider } from './contexts/ContextTheme';
+import { ContextLanguageProvider } from './contexts/ContextLanguage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-	<ContextThemeProvider>
-		<React.StrictMode>
-			<App />
-		</React.StrictMode>
-	</ContextThemeProvider>
+	<ContextLanguageProvider>
+		<ContextThemeProvider>
+			<React.StrictMode>
+				<App />
+			</React.StrictMode>
+		</ContextThemeProvider>
+	</ContextLanguageProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
