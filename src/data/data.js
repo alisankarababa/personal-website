@@ -10,11 +10,23 @@ import logoArrowRight from "../assets/arrow-right.svg"
 import logoArrowRightWhite from "../assets/arrow-right-white.svg"
 import picRandomJokes from "../assets/projects/random-jokes.svg"
 import picAreYouBored from "../assets/projects/are-you-bored.svg"
+import imgHero from "../assets/hero/img-hero.jpg"
+import logoLinkedIn from "../assets/hero/LinkedIn.svg"
+import logoLinkedInDarkTheme from "../assets/hero/LinkedIn-darkTheme.svg"
+import logoGithub from "../assets/hero/github.png"
+import logoGithubDarkTheme from "../assets/hero/github-darkTheme.png"
 
 
 
 const images = Object.freeze({
 
+    hero: {
+        imgHero,
+        logoLinkedIn,
+        logoLinkedInDarkTheme,
+        logoGithub,
+        logoGithubDarkTheme
+    },
     skills: {
         logoJs,
         logoFigma,
