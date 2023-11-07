@@ -1,6 +1,7 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const ContextLanguage = createContext();
+const html = document.querySelector("html");
 
 export function useLanguage() {
 	return useContext(ContextLanguage);
@@ -21,6 +22,10 @@ export function ContextLanguageProvider({ children }) {
 
 		setLanguage(newLanguage);
 	}
+
+    useEffect(() => {
+        html.setAttribute("lang", language);
+    }, [language, eLanguage])
 
 	return (
 		<ContextLanguage.Provider value={{eLanguage, language, switchLanguage }}>
