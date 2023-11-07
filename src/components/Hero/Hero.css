@@ -9,12 +9,8 @@
 .sec-hero {
     padding-top: 5em;
     padding-bottom: 5em;
-    
     font-family: var(--fnt-inter);
 
-    display: grid;
-    grid-gap: 5rem;
-    grid-template-columns: minmax(300px, 3fr) minmax(150px, 1.5fr);
 
    
 }
@@ -62,4 +58,20 @@
 
 .dark .sec-hero {
     color: white;
+}
+
+@media (max-width: 849px) {
+    .hero__img {
+
+        max-width: 50%;
+        margin: 5rem auto 0 auto;
+    }
+}
+
+@media (min-width: 850px) {
+    .sec-hero {
+        display: grid;
+        grid-gap: 5rem;
+        grid-template-columns: minmax(300px, 3fr) minmax(150px, 1.5fr);
+    }
 }
