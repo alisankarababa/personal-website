@@ -1,9 +1,3 @@
-import logoJs from "../assets/skills/logo-js.svg";
-import logoFigma from "../assets/skills/logo-figma.svg";
-import logoNode from "../assets/skills/logo-node.svg";
-import logoReact from "../assets/skills/logo-react.svg";
-import logoRedux from "../assets/skills/logo-redux.svg";
-import logoVsCode from "../assets/skills/logo-vscode.svg";
 import logoRing from "../assets/logo-ring.svg"
 import logoPill from "../assets/logo-pill.svg"
 import logoArrowRight from "../assets/arrow-right.svg"
@@ -15,14 +9,6 @@ import picAreYouBored from "../assets/projects/are-you-bored.svg"
 
 const images = Object.freeze({
 
-    skills: {
-        logoJs,
-        logoFigma,
-        logoNode,
-        logoReact,
-        logoRedux,
-        logoVsCode
-    },
     projects: {
         picAreYouBored,
         picRandomJokes
@@ -35,7 +21,6 @@ const clrBlack0A0A14 = "#0A0A14";
 const clrBlue0077B5 = "#0077B5";
 const clrPinkAF0C48 = "#AF0C48";
 const clrBlueDDEEFE = "#DDEEFE";
-const clrBlueD9F6F1 = "#D9F6F1"
 const clr2D3235 = "#2D3235";
 const clr495351 = "#495351";
 const clrD9F6F1 = "#D9F6F1";
@@ -62,12 +47,12 @@ export const page_tr = {
     
     skillsData: {
 		list: [
-			{ name: "JAVASCRIPT", logo: images.skills.logoJs },
-			{ name: "REACT", logo: images.skills.logoReact },
-			{ name: "FIGMA", logo: images.skills.logoFigma },
-			{ name: "NODE", logo: images.skills.logoNode },
-			{ name: "REDUX", logo: images.skills.logoRedux },
-			{ name: "VS CODE", logo: images.skills.logoVsCode },
+			{ name: "JAVASCRIPT", logo: "./assets/skills/logo-js.svg" },
+			{ name: "REACT", logo: "./assets/skills/logo-react.svg" },
+			{ name: "REDUX", logo: "./assets/skills/logo-redux.svg" },
+			{ name: "NODE", logo: "./assets/skills/logo-node.svg" },
+			{ name: "VS CODE", logo: "./assets/skills/logo-vscode.svg" },
+			{ name: "FIGMA", logo: "./assets/skills/logo-figma.svg" },
 		],
 
         logoTop : logoRing,
@@ -172,12 +157,12 @@ export const page_en = {
 
 	skillsData: {
 		list: [
-			{ name: "JAVASCRIPT", logo: images.skills.logoJs },
-			{ name: "REACT", logo: images.skills.logoReact },
-			{ name: "REDUX", logo: images.skills.logoRedux },
-			{ name: "NODE", logo: images.skills.logoNode },
-			{ name: "VS CODE", logo: images.skills.logoVsCode },
-			{ name: "FIGMA", logo: images.skills.logoFigma },
+			{ name: "JAVASCRIPT", logo: "./assets/skills/logo-js.svg" },
+			{ name: "REACT", logo: "./assets/skills/logo-react.svg" },
+			{ name: "REDUX", logo: "./assets/skills/logo-redux.svg" },
+			{ name: "NODE", logo: "./assets/skills/logo-node.svg" },
+			{ name: "VS CODE", logo: "./assets/skills/logo-vscode.svg" },
+			{ name: "FIGMA", logo: "./assets/skills/logo-figma.svg" },
 		],
         logoTop : logoRing,
         logoLeft: logoPill,
