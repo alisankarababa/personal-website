@@ -108,7 +108,7 @@ export const page_tr = {
 
         title: "Profil",
         basicInfo: {
-            title: {text: "Temel Bilgiler", style: { color: clrBlue1769FF } },
+            title: "Temel Bilgiler",
             info: [
                 {label: "Doğum Tarihi",  text: "21-02-1994"},
                 {label: "İkamet Şehri", text: "İstanbul"},
@@ -172,7 +172,7 @@ export const page_en = {
 
         title: "Profile",
         basicInfo: {
-            title: {text: "Basic Information", style: { color: clrBlue1769FF } },
+            title: "Basic Information",
             info: [
                 {label: "Date of Birth",  text: "21-02-1994"},
                 {label: "Current City", text: "İstanbul"},

@@ -13,7 +13,7 @@ export default function Profile() {
 				<h2 className="sec--title" >{profileData.title}</h2>
 				<div className="profile">
 					<div className="basic-info profile__item">
-                        <h3 className="basic-info__title" style={basicInfo.title.style}>{basicInfo.title.text}</h3>
+                        <h3 className="basic-info__title" >{basicInfo.title}</h3>
                         {
                             basicInfo.info.map( info => {
                                 return <div key={info.label} className="basic-info__option"><label className="basic-info__label">{info.label}</label>

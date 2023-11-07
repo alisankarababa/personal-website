@@ -42,6 +42,7 @@
 .basic-info__title {
     font-size: 1.5rem;
     font-family: var(--fnt-playfair);
+    color: var(--clr-1769FF);
 }
 
 .basic-info__option {
