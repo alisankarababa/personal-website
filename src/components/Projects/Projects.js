@@ -1,4 +1,5 @@
 import "./Projects.css";
+import {useTheme} from "../../contexts/ContextTheme";
 
 import { page_en } from "../../data/data";
 
@@ -20,24 +21,14 @@ export function ProjectLink({ children, ...rest }) {
 	return <a {...rest}>{children}</a>;
 }
 
-const isDarkTheme = false; //TODO after adding dark the context update this. This just a test
-
 export default function Projects() {
-	function projectInLineStyle(project) {
-		let style = null;
-		if (isDarkTheme && project.styleDark) style = project.styleDark;
-		else style = project.style;
 
-		return style;
-	}
+    const { eTheme, theme } = useTheme();
 
-	function technologyInlineStyle(tech) {
-		let style = null;
-		if (isDarkTheme && tech.styleDark) style = tech.styleDark;
-		else style = tech.style;
-
-		return style;
-	}
+    function getClassBgClr(obj) {
+        
+        return eTheme.dark === theme ? obj.bgClrThemeDark : obj.bgClrThemeLight;
+    }
 
 	return (
 		<div className="projects-wrapper">
@@ -47,8 +38,7 @@ export default function Projects() {
                     {projectsData.list.map((project) => (
                         <div
                             key={project.title}
-                            className="project"
-                            style={projectInLineStyle(project)}
+                            className={`project ${getClassBgClr(project)}`}
                         >
                             <div className="project--width-limiter">
                                 <ProjectTitle className="project__title">
@@ -58,11 +48,10 @@ export default function Projects() {
                                     {project.summary}
                                 </ProjectSummary>
                                 <div className="project__technologies">
-                                    {project.technologies.list.map((tech) => (
+                                    {project.technologies.map((tech) => (
                                         <ProjectTechnology
                                             key={tech}
                                             className="project__technology pill"
-                                            style={technologyInlineStyle(project.technologies)}
                                         >
                                             {tech}
                                         </ProjectTechnology>
@@ -79,7 +68,7 @@ export default function Projects() {
                                         {link.hasLogo && (
                                             <img
                                                 src={
-                                                    isDarkTheme
+                                                    eTheme.dark === theme
                                                         ? projectsData.linkLogoDark
                                                         : projectsData.linkLogo
                                                 }

@@ -41,9 +41,18 @@
     font-weight: 700;
 }
 
+
 .project__technology {
     padding: 0.375em 1.25em 0.625em 1.25em;
+    background-color: white;
 }
+
+.dark .project__technology {
+
+    background-color: var(--clr-gray52);
+
+}
+
 
 .project__links {
     display: flex;

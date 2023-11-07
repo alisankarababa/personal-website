@@ -1,30 +1,11 @@
 import logoRing from "../assets/logo-ring.svg"
 import logoPill from "../assets/logo-pill.svg"
-import logoArrowRight from "../assets/arrow-right.svg"
-import logoArrowRightWhite from "../assets/arrow-right-white.svg"
-import picRandomJokes from "../assets/projects/random-jokes.svg"
-import picAreYouBored from "../assets/projects/are-you-bored.svg"
 
-
-
-const images = Object.freeze({
-
-    projects: {
-        picAreYouBored,
-        picRandomJokes
-    }
-
-});
 
 const clrBlue1769FF = "#1769FF";
 const clrBlack0A0A14 = "#0A0A14";
 const clrBlue0077B5 = "#0077B5";
 const clrPinkAF0C48 = "#AF0C48";
-const clrBlueDDEEFE = "#DDEEFE";
-const clr2D3235 = "#2D3235";
-const clr495351 = "#495351";
-const clrD9F6F1 = "#D9F6F1";
-const clr525252 = "#525252";
 
 
 const linkGithub = "https://github.com/alisankarababa";
@@ -65,43 +46,32 @@ export const page_tr = {
             {
                 title: "Random Jokes", 
                 summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                technologies: {
-                    list: ["redux", "vercel", "axios", "router"],
-                    style: { backgroundColor: "white" },
-                    styleDark: { backgroundColor: clr525252 },
-
-                },
+                technologies: ["redux", "vercel", "axios", "router"],
                 links: [
-                    {text: "View on Github", to: linkGithub},
-                    {text: "Go to app", to: linkGithub, hasLogo: true},
+                    {text: "View on Github", to: "https://github.com/alisankarababa"},
+                    {text: "Go to app", to: "https://github.com/alisankarababa", hasLogo: true},
                 ],
-                image: images.projects.picRandomJokes,
+                bgClrThemeLight: "bg-DDEEFE",
+                bgClrThemeDark: "bg-2D3235",
 
-                style: {backgroundColor: clrBlueDDEEFE},
-                styleDark : {backgroundColor: clr2D3235},
+                image: "./assets/projects/random-jokes.svg",
             },
             {
                 title: "Are you bored?", 
                 summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                technologies: {
-                    list: ["react", "redux", "vercel", "axios", "router"],
-                    style: { backgroundColor: "white" },
-                    styleDark: { backgroundColor: clr525252 },
-                },
+                technologies: ["react", "redux", "vercel", "axios", "router"],
                 links: [
-                    {text: "View on Github", to: linkGithub},
-                    {text: "Go to app", to: linkGithub, hasLogo: true},
+                    {text: "View on Github", to: "https://github.com/alisankarababa"},
+                    {text: "Go to app", to: "https://github.com/alisankarababa", hasLogo: true},
                 ],
-                image: images.projects.picAreYouBored,
-
-                style: {backgroundColor: clrD9F6F1},
-                styleDark: {backgroundColor: clr495351}
+                image: "./assets/projects/are-you-bored.svg",
+                bgClrThemeLight: "bg-D9F6F1",
+                bgClrThemeDark: "bg-495351",
             },
-            
         ],
 
-        linkLogo: logoArrowRight,
-        linkLogoDark: logoArrowRightWhite,
+        linkLogo: "./assets/projects/arrow-right.svg",
+        linkLogoDark: "./assets/projects/arrow-right-white.svg",
     },
 
     profileData: {
@@ -197,42 +167,32 @@ export const page_en = {
             {
                 title: "Random Jokes", 
                 summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                technologies: {
-                    list: ["redux", "vercel", "axios", "router"],
-                    style: { backgroundColor: "white" },
-                    styleDark: { backgroundColor: clr525252 },
-                },
+                technologies: ["redux", "vercel", "axios", "router"],
                 links: [
-                    {text: "View on Github", to: linkGithub},
-                    {text: "Go to app", to: linkGithub, hasLogo: true},
+                    {text: "View on Github", to: "https://github.com/alisankarababa"},
+                    {text: "Go to app", to: "https://github.com/alisankarababa", hasLogo: true},
                 ],
-                style: {backgroundColor: clrBlueDDEEFE},
-                styleDark : {backgroundColor: clr2D3235},
-                image: images.projects.picRandomJokes,
+                bgClrThemeLight: "bg-DDEEFE",
+                bgClrThemeDark: "bg-2D3235",
 
+                image: "./assets/projects/random-jokes.svg",
             },
             {
                 title: "Are you bored?", 
                 summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                technologies: {
-                    list: ["react", "redux", "vercel", "axios", "router"],
-                    style: { backgroundColor: "white" },
-                    styleDark: { backgroundColor: clr525252 },
-                },
+                technologies: ["react", "redux", "vercel", "axios", "router"],
                 links: [
-                    {text: "View on Github", to: linkGithub},
-                    {text: "Go to app", to: linkGithub, hasLogo: true},
+                    {text: "View on Github", to: "https://github.com/alisankarababa"},
+                    {text: "Go to app", to: "https://github.com/alisankarababa", hasLogo: true},
                 ],
-                image: images.projects.picAreYouBored,
-
-                style: {backgroundColor: clrD9F6F1},
-                styleDark: {backgroundColor: clr495351}
+                image: "./assets/projects/are-you-bored.svg",
+                bgClrThemeLight: "bg-D9F6F1",
+                bgClrThemeDark: "bg-495351",
             },
-            
         ],
 
-        linkLogo: logoArrowRight,
-        linkLogoDark: logoArrowRightWhite,
+        linkLogo: "./assets/projects/arrow-right.svg",
+        linkLogoDark: "./assets/projects/arrow-right-white.svg",
     },
 
     footerData: {

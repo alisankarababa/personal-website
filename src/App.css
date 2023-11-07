@@ -39,6 +39,10 @@
 }
 
 * {
+    --clr-495351: #495351;
+    --clr-D9F6F1: #D9F6F1;
+    --clr-2D3235: #2D3235;
+    --clr-DDEEFE: #DDEEFE;
     --clr-1769FF: #1769FF;
     --clr-grayDark: #2A262B;
     --clr-black: #0A0A14;
@@ -49,6 +53,31 @@
     --clr-F4: #F4F4F4;
     --fnt-inter: 'Inter', sans-serif;
     --fnt-playfair: 'Playfair Display', serif;
+
+}
+
+.bg-495351 {
+    background-color: var(--clr-495351);
+}
+
+.bg-D9F6F1 {
+    background-color: var(--clr-D9F6F1);
+}
+
+.bg-2D3235 {
+    background-color: var(--clr-2D3235);
+}
+
+.bg-525252 {
+    background-color: var(--clr-gray52);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-DDEEFE {
+    background-color: var(--clr-DDEEFE);
 }
 
 .clr-1769FF {
