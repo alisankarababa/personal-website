@@ -10,23 +10,11 @@ import logoArrowRight from "../assets/arrow-right.svg"
 import logoArrowRightWhite from "../assets/arrow-right-white.svg"
 import picRandomJokes from "../assets/projects/random-jokes.svg"
 import picAreYouBored from "../assets/projects/are-you-bored.svg"
-import imgHero from "../assets/hero/img-hero.jpg"
-import logoLinkedIn from "../assets/hero/LinkedIn.svg"
-import logoLinkedInDarkTheme from "../assets/hero/LinkedIn-darkTheme.svg"
-import logoGithub from "../assets/hero/github.png"
-import logoGithubDarkTheme from "../assets/hero/github-darkTheme.png"
 
 
 
 const images = Object.freeze({
 
-    hero: {
-        imgHero,
-        logoLinkedIn,
-        logoLinkedInDarkTheme,
-        logoGithub,
-        logoGithubDarkTheme
-    },
     skills: {
         logoJs,
         logoFigma,
@@ -57,17 +45,19 @@ const clr525252 = "#525252";
 const linkGithub = "https://github.com/alisankarababa";
 
 
-//TODO add hero section to tr page too
 export const page_tr = {
-	heroData: {
+    heroData: {
         greeting: "Merhaba👋",
 		intoductoryText: "Ben Alişan. Full-stack yazılımcıyım. Sağlam ve ölçeklenebilir frontend projeleri geliştiriyorum. Görüşelim!",
-        occupation: "Şu an UX, UI, & Web Tasarımı projeleri yapıyorum. -> Beni takımınızda görmek için -> alisankarababa@gmail.com",
-        img: images.hero.imgHero,
+        img: "/assets/hero/img-hero.jpg",
         links: [
-            { to: linkGithub, logo: images.hero.logoLinkedIn, logoDark: images.hero.logoLinkedInDarkTheme }, //TODO fix link to property
-            { to: linkGithub, logo: images.hero.logoGithub, logoDark: images.hero.logoGithubDarkTheme }
-        ]
+            { to: "https://github.com/alisankarababa", logoThemeLight: "./assets/hero/logo-linkedin-theme-light.svg", logoThemeDark: "./assets/hero/logo-linkedin-theme-dark.svg" }, 
+            { to: "https://github.com/alisankarababa", logoThemeLight: "./assets/hero/logo-github-theme-light.svg", logoThemeDark: "./assets/hero/logo-github-theme-dark.svg" }
+        ],
+        status: "Freelancer",
+        project: "UX, UI, & Web Design",
+        inviteMsg: "Beni takımınıza davet etmek için ->",
+        email: "alisankarababa@gmail.com",
     },
     
     skillsData: {
@@ -168,12 +158,16 @@ export const page_en = {
     heroData: {
         greeting: "Hello👋",
         intoductoryText: "I’m Alişan. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",
-        occupation: "Currently Freelancing for UX, UI, & Web Design Project. Invite me to join your team -> alisankarababa@gmail.com",
-        img: images.hero.imgHero,
+        img: "/assets/hero/img-hero.jpg",
         links: [
-            { to: linkGithub, logo: images.hero.logoLinkedIn, logoDark: images.hero.logoLinkedInDarkTheme }, //TODO fix link to property
-            { to: linkGithub, logo: images.hero.logoGithub, logoDark: images.hero.logoGithubDarkTheme }
-        ]
+            { to: "https://github.com/alisankarababa", logoThemeLight: "./assets/hero/logo-linkedin-theme-light.svg", logoThemeDark: "./assets/hero/logo-linkedin-theme-dark.svg" }, 
+            { to: "https://github.com/alisankarababa", logoThemeLight: "./assets/hero/logo-github-theme-light.svg", logoThemeDark: "./assets/hero/logo-github-theme-dark.svg" }
+        ],
+
+        status: "Freelancing",
+        project: "UX, UI, & Web Design",
+        inviteMsg: "Invite me to join your team ->",
+        email: "alisankarababa@gmail.com",
     },
 
 	skillsData: {

@@ -39,6 +39,7 @@
 }
 
 * {
+    --clr-1769FF: #1769FF;
     --clr-grayDark: #2A262B;
     --clr-black: #0A0A14;
     --clr-grayMid: #484148;
@@ -48,6 +49,10 @@
     --clr-F4: #F4F4F4;
     --fnt-inter: 'Inter', sans-serif;
     --fnt-playfair: 'Playfair Display', serif;
+}
+
+.clr-1769FF {
+    color: var(--clr-1769FF);
 }
 
 .custom-container {
