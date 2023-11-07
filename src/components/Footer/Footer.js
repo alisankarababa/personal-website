@@ -1,4 +1,6 @@
 import "./Footer.css";
+import { useTheme } from "../../contexts/ContextTheme"
+
 import { page_en } from "../../data/data";
 
 const { footerData } = page_en;
@@ -11,21 +13,14 @@ export function FooterLink({ children, ...rest }) {
 	return <a {...rest}>{children}</a>;
 }
 
-const isDarkTheme = false; //TODO after adding dark the context update this. This just a test
-
 export default function Footer(params) {
 	
-    function linkInLineStyle(link) {
-        
-        let  style = null;
-        if(isDarkTheme && link.styleDark)
-            style = link.styleDark;
-        else
-            style = link.style;
+    const { eTheme, theme } = useTheme();
 
-        return style;
+    function getClassClr(obj) {
+        
+        return eTheme.dark === theme && obj.colorThemeDark ? obj.colorThemeDark : obj.color;
     }
-    
     
     return (
 		<div className="footer-wrapper">
@@ -34,7 +29,8 @@ export default function Footer(params) {
 
                 <div className="footer__links">
 				    {footerData.links.map((link) => (
-                        <FooterLink className="link" key={link.name} href={link.to} style={linkInLineStyle(link)}>{link.name}</FooterLink>
+                        <FooterLink className={`link ${getClassClr(link)}`} 
+                        key={link.name} href={link.to}>{link.name}</FooterLink>
                         ))}
                 </div>
 			</footer>

@@ -39,6 +39,8 @@
 }
 
 * {
+    --clr-AF0C48: #AF0C48;
+    --clr-0077B5: #0077B5;
     --clr-495351: #495351;
     --clr-D9F6F1: #D9F6F1;
     --clr-2D3235: #2D3235;
@@ -82,6 +84,18 @@
 
 .clr-1769FF {
     color: var(--clr-1769FF);
+}
+
+.clr-white {
+    color: white;
+}
+
+.clr-AF0C48 {
+    color: var(--clr-AF0C48);
+}
+
+.clr-0077B5 {
+    color: var(--clr-0077B5);
 }
 
 .custom-container {
