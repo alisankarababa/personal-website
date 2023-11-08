@@ -1,9 +1,6 @@
 import "./Projects.css";
 import {useTheme} from "../../contexts/ContextTheme";
-
-import { page_en } from "../../data/data";
-
-const { projectsData } = page_en;
+import { useData } from "../../contexts/ContextData";
 
 export function ProjectTitle({ children, ...rest }) {
 	return <h2 {...rest}>{children}</h2>;
@@ -22,8 +19,9 @@ export function ProjectLink({ children, ...rest }) {
 }
 
 export default function Projects() {
-
     const { eTheme, theme } = useTheme();
+    const { data } = useData();
+    const { projectsData } = data;
 
     function getClassBgClr(obj) {
         
