@@ -6,14 +6,17 @@ import reportWebVitals from './reportWebVitals';
 
 import { ContextThemeProvider } from './contexts/ContextTheme';
 import { ContextLanguageProvider } from './contexts/ContextLanguage';
+import { ContextDataProvider } from './contexts/ContextData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<ContextLanguageProvider>
 		<ContextThemeProvider>
-			<React.StrictMode>
-				<App />
-			</React.StrictMode>
+			<ContextDataProvider>
+				<React.StrictMode>
+					<App />
+				</React.StrictMode>
+			</ContextDataProvider>
 		</ContextThemeProvider>
 	</ContextLanguageProvider>
 );
