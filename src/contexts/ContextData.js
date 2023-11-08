@@ -93,10 +93,10 @@ const page_tr = {
     },
 
     footerData: {
-        msg: "Let's work togetger on your next product.",
+        msg: "Yeni projenizde birlikte çalışalım.",
         links : [
             {name: "Github", to: "https://github.com/alisankarababa", color: "clr-1769FF"},
-            {name: "Personal Blog", to: "#", color: "clr-black",  colorThemeDark: "clr-white"},
+            {name: "Kişisel Blog", to: "#", color: "clr-black",  colorThemeDark: "clr-white"},
             {name: "Linkedin", to: "#",  color: "clr-0077B5"},
             {name: "Email", to: "#", color: "clr-AF0C48"},
         ]
