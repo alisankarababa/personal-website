@@ -24,6 +24,7 @@ const page_tr = {
     },
     
     skillsData: {
+        title: "Yetenekler",
         list: [
             { name: "JAVASCRIPT", logo: "./assets/skills/logo-js.svg" },
             { name: "REACT", logo: "./assets/skills/logo-react.svg" },
@@ -120,6 +121,7 @@ const page_en = {
     },
 
     skillsData: {
+        title: "Skills",
         list: [
             { name: "JAVASCRIPT", logo: "./assets/skills/logo-js.svg" },
             { name: "REACT", logo: "./assets/skills/logo-react.svg" },

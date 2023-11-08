@@ -1,11 +1,5 @@
-import React from "react";
-import { page_en } from "../../data/data";
 import "./Skills.css"
-
-
-const {skillsData} = page_en;
-
-
+import { useData } from "../../contexts/ContextData";
 
 export function SkillLogo({ src, alt, ...rest }) {
 	return <img src={src} alt={alt} {...rest} />;
@@ -25,13 +19,16 @@ export function Skill({ children, ...rest }) {
 
 export default function Skills({ className, ...rest }) {
 
+    const { data } = useData();
+    const {skillsData} = data;
+
     let classes = className ? className : "";
     classes += " sec-skills";
 
 	return (
 		<section className={classes}>
 			<div className="custom-container">
-				<h2 className="sec-skills__header">Skills</h2>
+				<h2 className="sec-skills__header">{skillsData.title}</h2>
 				<div className="skills">
 					{skillsData.list.map((skill) => (
 						<Skill className="skill" key={skill.name}>
