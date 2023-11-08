@@ -98,6 +98,14 @@
     color: var(--clr-0077B5);
 }
 
+.clr-777777 {
+    color: var(--clr-gray777);
+}
+
+.clr-grayD9 {
+    color: var(--clr-grayD9);
+}
+
 .custom-container {
     max-width: 67rem;
     margin: 0 auto;

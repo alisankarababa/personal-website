@@ -2,4 +2,26 @@
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
+    padding: 3em 0;
+    font-family: var(--fnt-inter);
+    font-weight: 700;
+}
+
+.header-wrapper {
+    background-color: var(--clr-F4);
+}
+
+.dark .header-wrapper {
+    background-color: var(--clr-grayDark);
+}
+
+.header__theme {
+    display: flex;
+    gap: .5rem;
+    border-right: 3px solid var(--clr-gray777);
+    padding-right: 1em;
+}
+
+.language-select:hover {
+    cursor: pointer;
 }
