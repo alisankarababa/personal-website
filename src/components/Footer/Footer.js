@@ -1,9 +1,6 @@
 import "./Footer.css";
 import { useTheme } from "../../contexts/ContextTheme"
-
-import { page_en } from "../../data/data";
-
-const { footerData } = page_en;
+import { useData } from "../../contexts/ContextData";
 
 export function FooterMsg({ children, ...rest }) {
 	return <p {...rest}>{children}</p>;
@@ -14,8 +11,9 @@ export function FooterLink({ children, ...rest }) {
 }
 
 export default function Footer(params) {
-	
     const { eTheme, theme } = useTheme();
+    const { data } = useData();
+    const { footerData } = data;
 
     function getClassClr(obj) {
         
