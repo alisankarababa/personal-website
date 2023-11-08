@@ -75,7 +75,7 @@ const page_tr = {
         basicInfo: {
             title: "Temel Bilgiler",
             info: [
-                {label: "Doğum Tarihi",  text: "21-02-1994"},
+                {label: "Doğum Tarihi",  text: "21.02.1994"},
                 {label: "İkamet Şehri", text: "İstanbul"},
                 {label: "Eğitim Durumu", text: "Boğaziçi Üniversitesi, Fizik Lisans, 2020" },
                 {label: "Tercih Ettiği Rol", text: "Full Stack Developer"},
@@ -85,8 +85,8 @@ const page_tr = {
         aboutMe: {
             title: "Hakkımda",
             paragraphs: [
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+                "Boğaziçi Üniversitesi' nde Fizik bölümü okudum. Yeni şeyler öğrenmek her zaman ilgimi çekmiştir.",
+                "Web developer olmak için yoğun bir eğitim aldım ve temel web geliştirme becerilerine sahibim. Yeni teknolojileri öğrenmeye açığım ve Web dünyasında daha fazla deneyim kazanmak için istekliyim."
             ]
         }
 
@@ -138,7 +138,7 @@ const page_en = {
         basicInfo: {
             title: "Basic Information",
             info: [
-                {label: "Date of Birth",  text: "21-02-1994"},
+                {label: "Date of Birth",  text: "21.02.1994"},
                 {label: "Current City", text: "İstanbul"},
                 {label: "Education", text: "Bogazici University, BS Physics, 2020" },
                 {label: "Preferred Role", text: "Full Stack Developer"},
@@ -148,8 +148,8 @@ const page_en = {
         aboutMe: {
             title: "About Me",
             paragraphs: [
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+                "I studied physics in Bogazici University. I have always been keen on learning new things.",
+                "I studied a heavy schedule web desing course, I have the fundemental skills to build a website. I am open to new technologies, and eager to get more experience in the world of Web."
             ]
         }
 
@@ -202,11 +202,12 @@ const page_en = {
 
 
 export function ContextDataProvider({ children }) {
+
     const {eLanguage, language} = useLanguage();
 
    
 
-    const [data, setData] = useState(page_en);
+    const [data, setData] = useState(page_tr);
 
     useEffect(() => {
 
