@@ -1,12 +1,12 @@
 import "./Profile.css";
-
-import { page_en } from "../../data/data";
-
-const { profileData } = page_en;
-
-const { basicInfo, aboutMe } = profileData;
+import { useData } from "../../contexts/ContextData";
 
 export default function Profile() {
+
+    const { data } = useData();
+    const { profileData } = data;
+    const { basicInfo, aboutMe } = profileData;
+
 	return (
 		<div className="profile-wrapper">
 			<section className="sec-profile custom-container">
