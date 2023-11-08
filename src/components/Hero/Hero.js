@@ -12,6 +12,7 @@ export default function Hero () {
 
     return ( 
 		<div className="hero-wrapper">
+            <img className="hero__ring" src={eTheme.dark === theme ? heroData.ringDark : heroData.ring } alt="circle"/>
 			<section className="sec-hero custom-container">
                 <div className="hero__text">
                     <p className="hero__greeting">{heroData.greeting}</p>

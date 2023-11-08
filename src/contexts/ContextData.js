@@ -27,6 +27,8 @@ const page_tr = {
         project: "UX, UI, & Web Design",
         inviteMsg: "Beni takımınıza davet etmek için ->",
         email: "alisankarababa@gmail.com",
+        ring: "./assets/hero/ring.svg",
+        ringDark: "./assets/hero/ring-dark.svg"
     },
     
     skillsData: {
@@ -128,6 +130,8 @@ const page_en = {
         project: "UX, UI, & Web Design",
         inviteMsg: "Invite me to join your team ->",
         email: "alisankarababa@gmail.com",
+        ring: "./assets/hero/ring.svg",
+        ringDark: "./assets/hero/ring-dark.svg"
     },
 
     skillsData: {
