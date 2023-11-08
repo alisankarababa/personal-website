@@ -2,13 +2,22 @@
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
-    padding: 3em 0;
     font-family: var(--fnt-inter);
     font-weight: 700;
 }
 
+.header__img {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translateY(-45%);
+    width: 8%;
+}
+
 .header-wrapper {
     background-color: var(--clr-F4);
+    padding: 3em 0;
+    position: relative;
 }
 
 .dark .header-wrapper {

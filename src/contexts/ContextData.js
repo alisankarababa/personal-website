@@ -9,6 +9,12 @@ export function useData() {
 }
 
 const page_tr = {
+
+    headerData: {
+        img: "./assets/header/full-circle.svg",
+        imgDark: "./assets/header/full-circle-dark.svg"
+    },
+
     heroData: {
         greeting: "Merhaba👋",
         intoductoryText: "Ben Alişan. Full-stack yazılımcıyım. Sağlam ve ölçeklenebilir frontend projeleri geliştiriyorum. Görüşelim!",
@@ -104,7 +110,11 @@ const page_tr = {
 };
 
 const page_en = {
-    
+    headerData: {
+        img: "./assets/header/full-circle.svg",
+        imgDark: "./assets/header/full-circle-dark.svg"
+    },
+
     heroData: {
         greeting: "Hello👋",
         intoductoryText: "I’m Alişan. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",

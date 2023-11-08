@@ -2,11 +2,13 @@ import "./Header.css";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import { useLanguage } from "../../contexts/ContextLanguage";
 import { useTheme } from "../../contexts/ContextTheme";
+import { useData } from "../../contexts/ContextData"
 
 export default function Header() {
 
     const { eLanguage, language, switchLanguage } = useLanguage();
     const { eTheme, theme } = useTheme();
+    const { data } = useData();
 
     function LanguageSelect() {
 
@@ -46,6 +48,7 @@ export default function Header() {
 
 	return (
         <div className="header-wrapper">
+            <img className="header__img" src={eTheme.dark === theme ? data.headerData.imgDark : data.headerData.img } alt="circle"/>
         <header className="header custom-container">
             <div className="header__theme">
                 <ToggleSwitch />
