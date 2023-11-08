@@ -1,13 +1,14 @@
 import "./Hero.css"
-import { page_en } from "../../data/data";
 import { useTheme } from "../../contexts/ContextTheme";
 import { useLanguage } from "../../contexts/ContextLanguage";
-
-const { heroData } = page_en;
+import { useData } from "../../contexts/ContextData";
 
 export default function Hero () {
     const {eTheme, theme} = useTheme();
     const {eLanguage, language} = useLanguage();
+    const { data } = useData();
+    const { heroData } = data;
+
 
     return ( 
 		<div className="hero-wrapper">
