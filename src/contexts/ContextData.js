@@ -42,6 +42,7 @@ const page_tr = {
             { name: "VS CODE", logo: "./assets/skills/logo-vscode.svg" },
             { name: "FIGMA", logo: "./assets/skills/logo-figma.svg" },
         ],
+        pill: "./assets/skills/pill.svg"
     },
 
     projectsData: {
@@ -147,6 +148,7 @@ const page_en = {
             { name: "VS CODE", logo: "./assets/skills/logo-vscode.svg" },
             { name: "FIGMA", logo: "./assets/skills/logo-figma.svg" },
         ],
+        pill: "./assets/skills/pill.svg"
     },
 
     profileData: {

@@ -17,16 +17,15 @@ export function Skill({ children, ...rest }) {
 	return <div {...rest}>{children}</div>;
 }
 
-export default function Skills({ className, ...rest }) {
+export default function Skills( ) {
 
     const { data } = useData();
     const {skillsData} = data;
 
-    let classes = className ? className : "";
-    classes += " sec-skills";
 
 	return (
-		<section className={classes}>
+		<section className="sec-skills">
+            <img className="skills_pill" src={ skillsData.pill } alt="circle"/>
 			<div className="custom-container">
 				<h2 className="sec-skills__header">{skillsData.title}</h2>
 				<div className="skills">
