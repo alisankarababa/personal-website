@@ -7,7 +7,16 @@ import Profile from "./components/Profile/Profile";
 import Hero from "./components/Hero/Hero";
 import Header from "./components/Header/Header";
 
+import { useData } from "./contexts/ContextData";
+import { Spinner } from "reactstrap";
+
 function App() {
+
+    const { data } = useData();
+
+    if(Object.keys(data).length === 0)
+        return  <div className="w-100  vh-100 d-flex justify-content-center align-items-center" ><Spinner color="primary" size="xxl" /></div>;
+
 	return (
 		<div className="App">
             <Header />
