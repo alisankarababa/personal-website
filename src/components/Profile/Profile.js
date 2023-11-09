@@ -9,6 +9,7 @@ export default function Profile() {
 
 	return (
 		<div className="profile-wrapper">
+            <img className="profile__ring" src={ profileData.ring } alt="circle"/>
 			<section className="sec-profile custom-container">
 				<h2 className="sec--title" >{profileData.title}</h2>
 				<div className="profile">

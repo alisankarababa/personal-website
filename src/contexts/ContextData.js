@@ -96,7 +96,8 @@ const page_tr = {
                 "Boğaziçi Üniversitesi' nde Fizik bölümü okudum. Yeni şeyler öğrenmek her zaman ilgimi çekmiştir.",
                 "Web developer olmak için yoğun bir eğitim aldım ve temel web geliştirme becerilerine sahibim. Yeni teknolojileri öğrenmeye açığım ve Web dünyasında daha fazla deneyim kazanmak için istekliyim."
             ]
-        }
+        },
+        ring: "./assets/profile/ring.svg"
 
     },
 
@@ -165,7 +166,8 @@ const page_en = {
                 "I studied physics in Bogazici University. I have always been keen on learning new things.",
                 "I studied a heavy schedule web desing course, I have the fundemental skills to build a website. I am open to new technologies, and eager to get more experience in the world of Web."
             ]
-        }
+        },
+        ring: "./assets/profile/ring.svg"
 
     },
 
