@@ -28,7 +28,8 @@ const page_tr = {
         inviteMsg: "Beni takımınıza davet etmek için ->",
         email: "alisankarababa@gmail.com",
         ring: "./assets/hero/ring.svg",
-        ringDark: "./assets/hero/ring-dark.svg"
+        ringDark: "./assets/hero/ring-dark.svg",
+        pill: "./assets/hero/pill.svg"
     },
     
     skillsData: {
@@ -132,7 +133,8 @@ const page_en = {
         inviteMsg: "Invite me to join your team ->",
         email: "alisankarababa@gmail.com",
         ring: "./assets/hero/ring.svg",
-        ringDark: "./assets/hero/ring-dark.svg"
+        ringDark: "./assets/hero/ring-dark.svg",
+        pill: "./assets/hero/pill.svg"
     },
 
     skillsData: {

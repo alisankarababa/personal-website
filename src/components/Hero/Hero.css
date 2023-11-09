@@ -1,6 +1,7 @@
 .hero-wrapper {
     background-color: var(--clr-F4);
     position: relative;
+    overflow-x: clip;
 }
 
 .dark .hero-wrapper {
@@ -19,6 +20,14 @@
     top: 100%;
     transform: translateY(-50%);
     width: 9%;
+}
+
+.hero__pill {
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+    transform: translateX(43%);
+    width: 15%;
 }
 
 .hero__img {
