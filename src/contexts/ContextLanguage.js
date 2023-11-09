@@ -1,4 +1,5 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage"
 
 const ContextLanguage = createContext();
 const html = document.querySelector("html");
@@ -13,7 +14,7 @@ export function ContextLanguageProvider({ children }) {
 		en: "en",
 	});
 
-	const [language, setLanguage] = useState(eLanguage.tr);
+	const [language, setLanguage] = useLocalStorage("language", eLanguage.tr);
 
 	function switchLanguage(newLanguage) {
 		if (Object.values(eLanguage).indexOf(newLanguage) === -1) {

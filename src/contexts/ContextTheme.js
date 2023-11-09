@@ -1,4 +1,6 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage"
+
 
 const ContextTheme = createContext();
 const html = document.querySelector("html");
@@ -13,7 +15,7 @@ export function ContextThemeProvider({ children }) {
 		light: "light",
 	});
 
-	const [theme, setTheme] = useState(eTheme.light);
+	const [theme, setTheme] = useLocalStorage("theme", eTheme.light);
 
 	function toggleTheme() {
 		setTheme(eTheme.light === theme ? eTheme.dark : eTheme.light);
