@@ -13,7 +13,7 @@ export function ContextLanguageProvider({ children }) {
 		en: "en",
 	});
 
-	const [language, setLanguage] = useState(eLanguage.en);
+	const [language, setLanguage] = useState(eLanguage.tr);
 
 	function switchLanguage(newLanguage) {
 		if (Object.values(eLanguage).indexOf(newLanguage) === -1) {
