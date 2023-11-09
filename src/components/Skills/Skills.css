@@ -3,6 +3,7 @@
     padding-bottom: 8.12em;
     font-family: var(--fnt-inter);
     position: relative;
+    overflow-x: clip;
 }
 
 .skills_pill {
