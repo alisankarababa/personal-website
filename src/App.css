@@ -109,6 +109,7 @@
 .custom-container {
     max-width: 67rem;
     margin: 0 auto;
+    padding: 0 1em;
 }
 
 .pill {
