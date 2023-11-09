@@ -123,9 +123,8 @@
     text-align: center;
 }
 
-@media (min-width: 400px) {
-    .custom-container {
-        padding: 0 1em;
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
     }
-
 }
